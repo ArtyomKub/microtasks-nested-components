@@ -4,16 +4,27 @@ type HeaderPropsType = {
     title: string
 }
 
-// NEWEST METHOD
-export const Header: FC<HeaderPropsType> = (props) => {
+// BEST METHOD:
+export const Header: FC<HeaderPropsType> = ({title}) => {
     return (
         <div>
-            {props.title}
+            {title}
         </div>
     )
 }
 
-// OLD METHOD
+
+// NEWEST METHOD
+// export const Header: FC<HeaderPropsType> = (props) => {
+//     return (
+//         <div>
+//             {props.title}
+//         </div>
+//     )
+// }
+
+
+// OLD METHOD:
 // export const Header = (props: HeaderPropsType) => {
 //     return (
 //         <div>
