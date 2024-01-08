@@ -1,14 +1,14 @@
 import React, {FC} from 'react';
 
 type HeaderPropsType = {
-    title: string
+    titleForHeader: string
 }
 
 // BEST METHOD:
-export const Header: FC<HeaderPropsType> = ({title}) => {
+export const Header: FC<HeaderPropsType> = ({titleForHeader}) => {
     return (
         <div>
-            {title}
+            {titleForHeader}
         </div>
     )
 }
@@ -18,7 +18,7 @@ export const Header: FC<HeaderPropsType> = ({title}) => {
 // export const Header: FC<HeaderPropsType> = (props) => {
 //     return (
 //         <div>
-//             {props.title}
+//             {props.titleForHeader}
 //         </div>
 //     )
 // }
@@ -28,7 +28,7 @@ export const Header: FC<HeaderPropsType> = ({title}) => {
 // export const Header = (props: HeaderPropsType) => {
 //     return (
 //         <div>
-//             {props.title}
+//             {props.titleForHeader}
 //         </div>
 //     );
 // };
