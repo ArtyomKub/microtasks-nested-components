@@ -6,11 +6,11 @@ import {Body} from './site/Body';
 
 function App() {
     return (
-        <div>
-            <Header/>
+        <>
+            <Header title='New Body'/>
             <Footer/>
             <Body/>
-        </div>
+        </>
     );
 }
 

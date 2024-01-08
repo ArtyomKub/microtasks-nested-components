@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-export const Header = () => {
+type HeaderPropsType = {
+    title: string
+}
+
+// NEWEST METHOD
+export const Header: FC<HeaderPropsType> = (props) => {
     return (
         <div>
-            Header
+            {props.title}
         </div>
-    );
-};
+    )
+}
+
+// OLD METHOD
+// export const Header = (props: HeaderPropsType) => {
+//     return (
+//         <div>
+//             {props.title}
+//         </div>
+//     );
+// };
