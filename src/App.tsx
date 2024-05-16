@@ -9,7 +9,7 @@ function App() {
         <>
             <Header titleForHeader = {'New Header'}/>
             <Body titleForBody = {'New Body'}/>
-            <Footer/>
+            <Footer titleForFooter = {'New Footer'}/>
         </>
     );
 }
